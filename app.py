@@ -3,7 +3,7 @@ from newspaper import Article
 import nltk
 import time
 from werkzeug.utils import url_quote
-
+import os
 
 nltk.download('punkt')
 
@@ -49,4 +49,5 @@ def process():
         return jsonify(result)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
