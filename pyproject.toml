@@ -12,6 +12,7 @@ authors = ["Gautam Pahwa"]
 python = "^3.7"
 flask = "^2.0.0"
 newspaper3k = "^0.2.8"
+werkzeug = "^2.0.0"
 
 [tool.poetry.dev-dependencies]
 
