@@ -2,7 +2,8 @@ from flask import Flask, render_template, request, jsonify
 from newspaper import Article
 import nltk
 import time
-from werkzeug.urls import url_quote
+from werkzeug.utils import url_quote
+
 
 nltk.download('punkt')
 
